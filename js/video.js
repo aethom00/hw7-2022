@@ -17,12 +17,12 @@ window.addEventListener("load", function() {
 	video.autoplay = false;
 	video.loop = false;
 	video.volume = 1;
-	document.getElementById("volume").innerHTML = "100%";
   
 	document.getElementById("play").addEventListener("click", function() {
 	  console.log("Play Video");
 	  video.play();
 	  console.log("Volume: " + video.volume);
+	  document.getElementById("volume").innerHTML = video.volume*100 + "%";
 	});
   
 	document.getElementById("pause").addEventListener("click", function() {
