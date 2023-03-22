@@ -17,6 +17,8 @@ window.addEventListener("load", function() {
 	video = document.getElementById("player1");
 	video.autoplay = false;
 	video.loop = false;
+	video.volume = 1;
+	document.getElementById("volume").innerHTML = "100%";
   
 	// Play Button - play the video and update the volume information
 	document.getElementById("play").addEventListener("click", function() {
